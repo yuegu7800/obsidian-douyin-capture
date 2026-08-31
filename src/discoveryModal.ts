@@ -26,7 +26,7 @@ export class DiscoveryModal extends Modal {
     contentEl.empty();
     modalEl.addClass("douyin-discovery-modal-container");
     const wrap = contentEl.createDiv({ cls: "douyin-discovery-modal" });
-    wrap.createEl("h2", { text: "搜索抖音知识" });
+    wrap.createEl("h2", { text: "月·抖音知识库 · 搜索" });
     wrap.createEl("p", {
       cls: "douyin-modal-desc",
       text: "搜索展示 20 条候选，默认选择 5 条，单次最多导入 10 条。",

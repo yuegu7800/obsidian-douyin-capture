@@ -27,7 +27,7 @@ export class ExtractModal extends Modal {
 
     const wrap = contentEl.createDiv({ cls: "douyin-extract-modal" });
 
-    wrap.createEl("h2", { text: "import douyin" });
+    wrap.createEl("h2", { text: "月·抖音知识库" });
     wrap.createEl("p", {
       cls: "douyin-modal-desc",
       text: "粘贴一个或多个抖音分享链接；批量时每行一条即可",

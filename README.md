@@ -1,10 +1,10 @@
-# Douyin Capture
+# 月·抖音知识库（Douyin Capture）
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> This repository is a customized fork maintained by **yuegu7800**, based on the original MIT-licensed project by **lyxdream**. Version 1.1.0 focuses on local knowledge extraction: batch import, duplicate prevention, search/recommendations, OCR-first captions, local Whisper fallback, and automatic cleanup of temporary media.
+> This repository is a customized fork maintained by **yuegu7800**, based on the original MIT-licensed project by **lyxdream**. The customized build is displayed in Obsidian as **月·抖音知识库**. Version 1.1.0+ focuses on local knowledge extraction: batch import, duplicate prevention, search/recommendations, OCR-first captions, local Whisper fallback, and automatic cleanup of temporary media.
 
-> 本仓库是 **yuegu7800** 维护的定制版本，基于 **lyxdream** 的 MIT 开源项目。1.1.0 重点面向本地知识库：批量导入、自动查重、搜索与相关推荐、字幕 OCR 优先、Whisper 语音兜底，以及临时视频/音频自动清理。
+> 本仓库是 **yuegu7800** 维护的定制版本，基于 **lyxdream** 的 MIT 开源项目。在 Obsidian 中显示为 **月·抖音知识库**，用于和原版插件区分。1.1.0+ 重点面向本地知识库：批量导入、自动查重、搜索与相关推荐、字幕 OCR 优先、Whisper 语音兜底，以及临时视频/音频自动清理。
 
 **Language / 语言:** [English](#english) · [中文](#chinese)
 
@@ -79,7 +79,7 @@ Keep the terminal running. The plugin cannot extract content after the backend s
    └── versions.json   # if included
    ```
 
-3. Obsidian → **Settings → Community plugins** → turn off Restricted mode → enable **Douyin Capture**.
+3. Obsidian → **Settings → Community plugins** → turn off Restricted mode → enable **月·抖音知识库**.
 
 **With BRAT (easy updates)**
 
@@ -87,7 +87,7 @@ Install the BRAT community plugin, choose **Add Beta plugin**, and enter `yuegu7
 
 **From the community catalog**
 
-Settings → Community plugins → Browse → search **Douyin Capture** → Install → Enable.
+This customized build is distributed through GitHub Releases/BRAT and is not yet listed in the official community catalog.
 
 **Build from source**
 
@@ -102,7 +102,7 @@ Copy the plugin folder (including generated `main.js`) into `.obsidian/plugins/d
 
 #### 3. Configure the plugin
 
-**Settings → Douyin Capture**
+**Settings → 月·抖音知识库**
 
 | Option | Default | Description |
 |--------|---------|-------------|
@@ -133,9 +133,9 @@ Progress steps are shown during extraction (health check → parse/download → 
 
 | Command | Description |
 |---------|-------------|
-| Douyin Capture: Create note from URL | Open the import modal |
-| Douyin Capture: Create note from clipboard | Read link from clipboard (full caption extract) |
-| Douyin Capture: Check backend connection | Test `GET /api/health` |
+| 月·抖音知识库: Create note from URL | Open the import modal |
+| 月·抖音知识库: Create note from clipboard | Read link from clipboard (full caption extract) |
+| 月·抖音知识库: Check backend connection | Test `GET /api/health` |
 
 **Generated notes**
 
@@ -150,7 +150,7 @@ See [`docs/obsidian-plugin-contract.md`](docs/obsidian-plugin-contract.md) for f
 ```
 ┌─────────────────┐     HTTP (localhost)     ┌──────────────────────────────┐
 │  Obsidian       │  POST /api/video/extract │  obsidian-content-capture-   │
-│  Douyin Capture │ ───────────────────────► │  backend (Python + Flask)    │
+│  月·抖音知识库   │ ───────────────────────► │  backend (Python + Flask)    │
 │  plugin         │ ◄─────────────────────── │  parse / download / Whisper  │
 └────────┬────────┘                          └──────────────────────────────┘
          │ copy media + write .md
@@ -270,7 +270,7 @@ python web/app.py
    └── versions.json   # 若有
    ```
 
-3. Obsidian → **设置 → 第三方插件 → 关闭安全模式 → 启用「Douyin Capture」**。
+3. Obsidian → **设置 → 第三方插件 → 关闭安全模式 → 启用「月·抖音知识库」**。
 
 **方式 B：使用 BRAT 自动更新**
 
@@ -278,7 +278,7 @@ python web/app.py
 
 **方式 C：社区插件市场**
 
-设置 → 第三方插件 → 浏览 → 搜索 **Douyin Capture** → 安装 → 启用。
+该定制版本目前通过 GitHub Release/BRAT 分发，尚未进入 Obsidian 官方社区插件市场。
 
 **方式 D：手动构建**
 
@@ -293,7 +293,7 @@ npm run build
 
 #### 3. 配置插件
 
-**设置 → Douyin Capture**：
+**设置 → 月·抖音知识库**：
 
 | 选项 | 默认 | 说明 |
 |------|------|------|
@@ -325,9 +325,9 @@ npm run build
 
 | 命令 | 说明 |
 |------|------|
-| Douyin Capture：从抖音链接创建笔记 | 打开导入弹窗 |
-| Douyin Capture：从剪贴板创建笔记 | 读取剪贴板中的链接（完整提取文案） |
-| Douyin Capture：检查后端连接 | 测试 `GET /api/health` |
+| 月·抖音知识库：从抖音链接创建笔记 | 打开导入弹窗 |
+| 月·抖音知识库：从剪贴板创建笔记 | 读取剪贴板中的链接（完整提取文案） |
+| 月·抖音知识库：检查后端连接 | 测试 `GET /api/health` |
 
 **生成的笔记示例**
 
@@ -342,7 +342,7 @@ npm run build
 ```
 ┌─────────────────┐     HTTP (localhost)     ┌──────────────────────────────┐
 │  Obsidian       │  POST /api/video/extract │  obsidian-content-capture-   │
-│  Douyin Capture │ ───────────────────────► │  backend (Python + Flask)    │
+│  月·抖音知识库   │ ───────────────────────► │  backend (Python + Flask)    │
 │  插件           │ ◄─────────────────────── │  解析 / 下载 / Whisper       │
 └────────┬────────┘                          └──────────────────────────────┘
          │ 拷贝 media + 写 .md

@@ -34,11 +34,11 @@ export default class DouyinCapturePlugin extends Plugin {
 
     addIcon("douyin-capture", DOUYIN_ICON_SVG);
 
-    this.addRibbonIcon("douyin-capture", "Douyin Capture：从链接创建笔记", () => {
+    this.addRibbonIcon("douyin-capture", "月·抖音知识库：从链接创建笔记", () => {
       new ExtractModal(this).open();
     });
 
-    this.addRibbonIcon("search", "Douyin Capture：搜索并导入知识", () => {
+    this.addRibbonIcon("search", "月·抖音知识库：搜索并导入知识", () => {
       new DiscoveryModal(this).open();
     });
 

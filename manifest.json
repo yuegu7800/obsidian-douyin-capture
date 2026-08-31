@@ -1,9 +1,9 @@
 {
   "id": "douyin-capture",
-  "name": "Douyin Capture",
-  "version": "1.1.0",
+  "name": "月·抖音知识库",
+  "version": "1.1.1",
   "minAppVersion": "1.4.0",
-  "description": "Build a local Douyin knowledge base with batch import, deduplication, discovery, OCR-first captions, and local Whisper fallback. Requires the companion local backend.",
+  "description": "月·抖音知识库：批量导入、自动查重、搜索推荐、字幕 OCR 与本地 Whisper 兜底。需要配套本地后端。",
   "author": "yuegu7800 (based on lyxdream's original project)",
   "authorUrl": "https://github.com/yuegu7800",
   "isDesktopOnly": true

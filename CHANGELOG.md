@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1
+
+- Rename the displayed plugin name to **月·抖音知识库** so the customized build is easy to distinguish from the upstream plugin.
+- Keep the existing `douyin-capture` plugin ID so installed settings and vault folders remain compatible.
+
 ## 1.1.0
 
 - Add multi-link batch import with per-item progress and failure isolation.
